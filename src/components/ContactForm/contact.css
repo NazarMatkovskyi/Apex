@@ -1,0 +1,203 @@
+.contactForm {
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 6000;
+    overflow: auto;
+}
+
+.contactForm .active {
+    z-index: 6000;
+    position: absolute;
+}
+
+.contactForm .form {
+    display: grid;
+    grid-template-columns: 440px 550px;
+    position: relative;
+}
+
+.contactForm .form .close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.contactForm .form .right-block .top-block {
+    background: #EDF1F7;
+    padding: 48px 50px;
+}
+
+.contactForm .form .right-block .top-block .title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    color: #2E3A59;
+}
+
+.contactForm .form .right-block .top-block .desc {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    color: #2E3A59;
+}
+
+.contactForm .form .right-block .block-bottom {
+    background: #F7F9FC;
+    padding: 34px 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm .form .right-block .block-bottom .title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2E3A59;
+}
+
+.contactForm .form .right-block .block-bottom span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #2E3A59;
+}
+
+.contactForm .form .right-block .block-bottom .press-text {
+    margin: 30px 0 30px;
+}
+
+.contactForm .form .left-block {
+    padding: 120px 48px 56px;
+    background: #FFFFFF;
+}
+
+.contactForm .form .first-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px 24px;
+    border-bottom: 1px solid #EDF1F7;
+    padding-bottom: 16px;
+}
+
+.contactForm .form .input-contact {
+    display: grid;
+}
+
+.contactForm .form .input-contact input {
+    border: 1px solid #C5CEE0;
+    padding: 14px 16px;
+    margin-top: 4px;
+    line-height: 16px;
+}
+
+.contactForm .form .input-type span,
+.contactForm .form .input-contact span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2E3A59;
+}
+
+.contactForm .form .input-type {
+    position: relative;
+    margin-top: 16px;
+}
+
+
+.contactForm .form .input-type textarea,
+.contactForm .form .input-type input {
+    border: 1px solid #C5CEE0;
+    padding: 14px 16px;
+    margin-top: 4px;
+    line-height: 16px;
+    width: 95%;
+    font-weight: 600;
+    font-size: 12px;
+    color: #8F9BB3;
+    resize: none;
+}
+
+.contactForm .form .input-type .vector-down {
+    position: absolute;
+    top: 42px;
+    right: 15px;
+}
+
+.contactForm .form .submit {
+    background: #295CD6;
+    padding: 15px 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: flex;
+    grid-gap: 20px;
+}
+.form_message{
+    height: 70px;
+}
+
+.contactForm .form .contact-footer-submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+@media (max-width: 1000px) {
+    .contactForm .form {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 805px) {
+    .contactForm .form .right-block .block-bottom,
+    .contactForm .form .right-block .top-block {
+        padding: 16px;
+    }
+
+    .contactForm .form .left-block {
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contactForm .form {
+        grid-template-columns: 1fr;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .contactForm .form .right-block .block-bottom {
+        display: none;
+    }
+
+    .contactForm .form .right-block .top-block {
+        height: 100%;
+    }
+}
+
+@media (max-width: 460px) {
+    .contactForm .form .right-block .top-block .desc {
+        font-size: 22px;
+    }
+
+    .contactForm .form .first-inputs {
+        grid-template-columns: 1fr;
+    }
+
+    .contactForm .form .right-block .top-block .title {
+        font-weight: 600;
+    }
+}
+

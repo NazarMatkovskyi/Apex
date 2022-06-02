@@ -1,0 +1,112 @@
+.navbar {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  padding-left: 7%;
+  align-items: center;
+  height: 96px;
+  background: #295cd6;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar .navbar_menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar .navbar_menu .navbar_menu-list {
+  display: flex;
+  grid-gap: 60px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.navbar .navbar_menu .navbar_menu_contact {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar .navbar_menu .navbar_menu_contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 291px;
+  background: #214aad;
+  height: 100%;
+  cursor: pointer;
+}
+
+.navbar .navbar_menu-hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.navbar .navbar_modal-menu {
+  position: fixed;
+  top: 96px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  height: calc(100% - 96px);
+  transform: translateX(100%);
+}
+
+.navbar .navbar_modal-menu.active {
+  transform: translateX(0);
+}
+
+.navbar .navbar_modal-menu .navbar_modal-navigation {
+  background: url(../../assets/images/menuImages.png) right bottom 100%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+@media (max-width: 1175px) {
+  .navbar .navbar_menu .navbar_menu-list {
+    display: none;
+  }
+}
+@media (max-width: 723px) {
+  .navbar .navbar_menu .navbar_menu_contact {
+    display: none;
+  }
+  .navbar .navbar_menu-hamburger {
+    background-color: #295cd6;
+  }
+  .burger-menu {
+    background-color: #ffffff;
+  }
+  .navbar .navbar_modal-menu .navbar_modal-navigation {
+    background: #fff !important;
+  }
+  .menu .menu_left {
+    margin: 0;
+  }
+
+  .navbar .navbar_modal-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .navbar .navbar_modal-menu.active {
+    overflow-y: scroll;
+  }
+}

@@ -1,0 +1,225 @@
+.insights {
+  margin-top: 100px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+.insights .insights_title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+  color: #2e3a59;
+  padding-left: 37px;
+  padding-bottom: 30px;
+}
+.insights .insights_info {
+  display: flex;
+}
+.insights .insights_list {
+  display: flex;
+  grid-gap: 20px;
+}
+.insights_list_text {
+  color: #8f9bb3;
+}
+.insights_list_text-active {
+  color: #295cd6;
+  padding-bottom: 10px;
+  font-weight: 500;
+  border-bottom: 2px solid #295cd6;
+}
+.insights_info-left {
+  position: relative;
+  padding-left: 45px;
+}
+.insights_list_inner {
+  display: flex;
+  gap: 75px;
+  font-size: 26px;
+  line-height: 32px;
+  color: #8f9bb3;
+  padding-bottom: 30px;
+}
+.insights_list_text:hover {
+  color: #295cd6;
+  font-weight: 500;
+  transition: 0.4s;
+}
+.insights_info-left-inner {
+  position: absolute;
+  width: 460px;
+  height: 150px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-right: 34px;
+  padding-left: 24px;
+  padding-top: 24px;
+  grid-gap: 20px;
+  top: 280px;
+}
+.insights_info-left_time {
+  font-size: 15px;
+  font-weight: 500;
+  color: #8f9bb3;
+  line-height: 24px;
+}
+.insights_info-blog {
+  color: #295cd6;
+  padding-left: 5px;
+}
+.insights_info_subtitle {
+  font-size: 26px;
+  line-height: 32px;
+  color: #2e3a59;
+  font-weight: 500;
+}
+.insights_info-right {
+  width: 600px;
+  border-top: 1px solid #e4e9f2;
+  margin-top: -60px;
+  padding-top: 45px;
+  margin-left: 30px;
+}
+.insights_info-right_list {
+  padding-left: 2px;
+  padding-right: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 35px;
+}
+.insights_info-right-inner {
+  display: flex;
+  grid-gap: 25px;
+}
+.insights_info-right-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.insights_info-right-title {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #2e3a59;
+}
+.insights_info-right_list-btn {
+  font-family: Montserrat;
+  width: 190px;
+  height: 50px;
+  border: 2px solid #295cd6;
+  color: #295cd6;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  background-color: transparent;
+}
+
+.newsletter {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-gap: 30px;
+  margin-bottom: 100px;
+}
+
+.newsletter .newsletter_title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #2e3a59;
+}
+.newsletter .newsletter_subtitle {
+  font-size: 18px;
+  color: #8f9bb3;
+  font-weight: 500;
+}
+.newsletter .newsletter_form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 30px;
+}
+.newsletter .newsletter_form .newsletter_list {
+  width: 300px;
+  height: 45px;
+  background-color: transparent;
+  border: 1px solid #e4e9f2;
+  padding-left: 25px;
+  font-size: 16px;
+  color: #8f9bb3;
+  line-height: 26px;
+  font-family: Montserrat;
+}
+
+.newsletter .newsletter_form .newsletter-btn {
+  background-color: #295cd6;
+  border: none;
+  color: #fff;
+}
+
+@media (max-width: 723px) {
+  .insights {
+    padding-left: 0;
+  }
+  .insights .insights_title {
+    padding-left: 15px;
+  }
+  .insights .insights_list {
+    margin-left: -26px;
+    gap: 0;
+  }
+  .insights_list_inner {
+    font-size: 22px;
+    color: #8f9bb3;
+    padding-bottom: 30px;
+  }
+  .insightsOneImages {
+    width: 400px;
+  }
+  .insightsImages {
+    width: 400px;
+    height: 220px;
+  }
+  .insights_info-left {
+    padding-left: 0;
+  }
+  .insights_info-left-inner {
+    position: static;
+    width: 420px;
+  }
+  .insights_list_inner{
+     gap: 45px;
+  }
+
+  .insights_info-right_list {
+    margin-left: -40px;
+    justify-items: center;
+  }
+  .insights_info-right-inner {
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  .insights_info-right-first {
+    padding-left: 30px;
+  }
+  .newsletter {
+    margin-top: 30px;
+  }
+  .newsletter .newsletter_title {
+    text-align: center;
+  }
+  .newsletter .newsletter_form {
+    justify-content: center;
+  }
+  .newsletter .newsletter_form .newsletter-btn {
+    width: 350px;
+  }
+  .newsletter .newsletter_form .newsletter_list {
+    border: none;
+    width: 358px;
+  }
+  .insights .insights_info {
+    flex-wrap: wrap;
+  }
+}
